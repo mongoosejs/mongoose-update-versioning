@@ -2,7 +2,7 @@
 
 const assert = require('assert');
 const mongoose = require('mongoose');
-const updateVersioningPlugin = require('../lib');
+const updateVersioningPlugin = require('../');
 
 describe('Examples', function() {
   before(function*() {

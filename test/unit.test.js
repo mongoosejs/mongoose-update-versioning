@@ -15,9 +15,9 @@ describe('applyVersioning', function() {
     });
   });
 
-  it('no-op unless `version` option set', function() {
+  it('no-op if `version` option is false', function() {
     let update = { $push: { tags: 'foo' } };
-    assert.ok(!applyVersioning(update, {}, schema));
+    assert.ok(!applyVersioning(update, { version: false }, schema));
 
     assert.deepEqual(update, { $push: { tags: 'foo' } });
   });
