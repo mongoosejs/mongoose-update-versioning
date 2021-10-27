@@ -6,11 +6,16 @@ const updateVersioningPlugin = require('../');
 
 describe('Examples', function() {
   before(function*() {
-    mongoose.set('useFindAndModify', false);
+    let connectOptions;
 
-    yield mongoose.connect('mongodb://localhost:27017/updateversioning', {
-      useNewUrlParser: true
-    });
+    if (/^5\./.test(mongoose.version)) {
+      mongoose.set('useFindAndModify', false);
+      connectOptions = {
+        useNewUrlParser: true
+      };
+    }
+
+    yield mongoose.connect('mongodb://localhost:27017/updateversioning', connectOptions);
 
     yield mongoose.connection.dropDatabase();
   });
