@@ -1,6 +1,6 @@
 {
   "name": "mongoose-update-versioning",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Mongoose versioning (http://bit.ly/mongoose-versioning) for update operations",
   "main": "index.js",
   "scripts": {
