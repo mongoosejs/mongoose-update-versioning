@@ -25,7 +25,7 @@
     "co": "4.6.0",
     "co-mocha": "1.2.2",
     "mocha": "5.x",
-    "mongoose": "5.x"
+    "mongoose": "6.x"
   },
   "peerDependencies": {
     "mongoose": "5.x || 6.x"
