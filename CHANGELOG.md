@@ -1,3 +1,7 @@
+0.3.0 / 2023-08-14
+==================
+ * feat: add support for Mongoose 7 #6
+
 0.2.0 / 2021-11-02
 ==================
  * feat: add support for Mongoose 6 #4 [libinvarghese](https://github.com/libinvarghese)
