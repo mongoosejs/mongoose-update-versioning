@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const updateVersioningPlugin = require('../');
 
 describe('Examples', function() {
-  before(function*() {
+  before(function*(done) {
     let connectOptions;
 
     if (/^5\./.test(mongoose.version)) {
@@ -17,7 +17,7 @@ describe('Examples', function() {
 
     yield mongoose.connect('mongodb://localhost:27017/updateversioning', connectOptions);
 
-    return mongoose.connection.dropDatabase();
+    yield mongoose.connection.dropDatabase();
   });
 
   after(function*() {
