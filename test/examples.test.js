@@ -17,7 +17,7 @@ describe('Examples', function() {
 
     yield mongoose.connect('mongodb://localhost:27017/updateversioning', connectOptions);
 
-    yield mongoose.connection.dropDatabase();
+    return mongoose.connection.dropDatabase();
   });
 
   after(function*() {
