@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const updateVersioningPlugin = require('../');
 
 describe('Examples', function() {
-  before(function*(done) {
+  before(function*() {
     let connectOptions;
 
     if (/^5\./.test(mongoose.version)) {
