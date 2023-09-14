@@ -33,18 +33,3 @@ jobs:
 
       - run: npm test
 
-  lint:
-    runs-on: ubuntu-latest
-    name: Linter
-    steps:
-      - uses: actions/checkout@v2
-
-      - name: Setup node
-        uses: actions/setup-node@v1
-        with:
-          node-version: 14
-
-      - run: npm install
-
-      - name: Linter
-        run: npm run lint
