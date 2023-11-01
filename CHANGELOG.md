@@ -1,3 +1,7 @@
+0.4.0 / 2023-10-31
+==================
+ * feat: add support for Mongoose 8
+
 0.3.0 / 2023-08-14
 ==================
  * feat: add support for Mongoose 7 #6
