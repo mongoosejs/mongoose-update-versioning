@@ -28,7 +28,7 @@
     "mongoose": "8.x"
   },
   "peerDependencies": {
-    "mongoose": "5.x || 6.x || 7.x || 8.x"
+    "mongoose": "5.x || 6.x || 7.x || 8.x || ^9.0.0-0"
   },
   "author": "Valeri Karpov <val@karpov.io>",
   "license": "Apache 2.0",
